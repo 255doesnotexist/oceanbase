@@ -63,6 +63,7 @@
 #include "sql/engine/expr/ob_expr_greatest.h"
 #include "sql/engine/expr/ob_expr_agg_param_list.h"
 #include "sql/engine/expr/ob_expr_is_serving_tenant.h"
+#include "sql/engine/expr/ob_expr_hello_repeat.h"
 #include "sql/engine/expr/ob_expr_hex.h"
 #include "sql/engine/expr/ob_expr_password.h"
 #include "sql/engine/expr/ob_expr_in.h"
@@ -873,6 +874,7 @@ void ObExprOperatorFactory::register_expr_operators()
     REG_OP(ObExprRandomBytes);
     /* subquery comparison experator */
     REG_OP(ObExprSubQueryRef);
+    REG_OP(ObExprHelloRepeat);
     REG_OP(ObExprSubQueryEqual);
     REG_OP(ObExprSubQueryNotEqual);
     REG_OP(ObExprSubQueryNSEqual);
